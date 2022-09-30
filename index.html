@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Alumnos</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Colegio CoderHouse</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+
+            <!-- FORM -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agregar un alumno</h4>
+                    </div>
+                    <form id="alumno-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre del alumno" class="form-control" required>
+                        </div>
+                        <input type="submit" value="Ingresar notas" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Lista de alumnos -->
+            <div id="alumnos-list" class="col-md-8">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="App.js" type="module"></script>
+</body>
+
+</html>
